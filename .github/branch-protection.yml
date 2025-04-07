@@ -1,0 +1,10 @@
+===== START branch-protection.yml =====
+name: default
+protection:
+  required_status_checks:
+    strict: true
+    contexts: ["build", "markdown-lint"]
+  required_pull_request_reviews:
+    required_approving_review_count: 1
+  restrictions: null
+===== END branch-protection.yml =====

@@ -1,0 +1,10 @@
+===== START CODEOWNERS =====
+
+# Default reviewers for everything in this repo
+
+-       @core-maintainers
+
+# Docs have a separate owner group
+
+/docs/ @tech-writers
+===== END CODEOWNERS =====
