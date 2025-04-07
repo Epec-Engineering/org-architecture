@@ -1,5 +1,3 @@
-===== START CONTRIBUTING.md =====
-
 # Contributing Guide
 
 ## Clone & Branch
@@ -23,4 +21,3 @@ pip install pre-commit
 # Activate hooks in this repo
 
 pre-commit install
-===== END CONTRIBUTING.md =====

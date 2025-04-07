@@ -1,0 +1,20 @@
+name: apply-branch-protection
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/branch-protection.yml"
+
+jobs:
+  protect:
+    runs-on: ubuntu-latest
+    permissions:
+      # gives the workflow permission to edit branch protection
+      administration: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply protection
+        uses: BenJAminS01/github-protection-bot@v2
+        with:
+          config_path: .github/branch-protection.yml
